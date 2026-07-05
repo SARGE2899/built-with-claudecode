@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiny GPT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="back-link" href="../index.html">&larr; All projects</a>
+
+  <header class="project-header">
+    <h1>Tiny GPT</h1>
+    <p class="subtitle">
+      A GPT-style transformer language model built entirely from scratch in pure NumPy —
+      custom attention, a BPE tokenizer, embeddings, a training loop with teacher forcing,
+      and multiple decoding strategies. No PyTorch, no autograd: every forward and backward
+      pass is hand-derived and numerically verified.
+    </p>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Architecture</h2>
+      <ul class="arch-list">
+        <li><strong>Tokenizer</strong> — text &harr; integer ids</li>
+        <li><strong>Token + positional embeddings</strong></li>
+        <li><strong>Causal self-attention</strong> — single-head, with causal masking</li>
+        <li><strong>Multi-head attention</strong></li>
+        <li><strong>Layer normalization</strong> (forward + backward)</li>
+        <li><strong>Position-wise feedforward blocks</strong></li>
+        <li><strong>Transformer block</strong> — attention + FFN + LayerNorm + residuals, stacked</li>
+        <li><strong>Training loop</strong> — Adam optimizer, teacher forcing</li>
+        <li><strong>Text generation</strong> — autoregressive sampling with temperature</li>
+        <li><strong>Gradient checking</strong> — numerical verification of every backward pass</li>
+      </ul>
+      <p class="note">
+        No LoRA, KV-caching, or quantization yet — this build focuses on getting the core
+        transformer math (forward + backward) provably correct by hand.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Source</h2>
+      <p>
+        <a href="https://github.com/SARGE2899/built-with-claudecode" target="_blank" rel="noopener noreferrer">
+          View the code on GitHub
+        </a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Try it</h2>
+      <p class="note">Runs against a hosted model on Hugging Face Spaces.</p>
+
+      <div class="demo">
+        <textarea id="prompt-input" rows="4" placeholder="Enter a prompt..."></textarea>
+        <button type="button" id="generate-btn">Generate</button>
+
+        <div id="demo-status" class="demo-status" hidden></div>
+        <div id="demo-output" class="demo-output" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

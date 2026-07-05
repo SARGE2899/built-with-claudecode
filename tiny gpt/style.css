@@ -1,0 +1,158 @@
+:root {
+  --ink: #14161a;
+  --ink-body: #4a4d57;
+  --ink-muted: #8b8d96;
+  --ink-border: #e4e4e7;
+  --ink-fill: #f7f7f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 1.5rem 1.5rem 0;
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: var(--ink);
+}
+
+.project-header,
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.project-header {
+  padding-top: 1.5rem;
+}
+
+.project-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  color: var(--ink);
+}
+
+.subtitle {
+  color: var(--ink-body);
+  margin: 0;
+}
+
+.section {
+  margin-top: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--ink-border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+
+.arch-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--ink-body);
+}
+
+.arch-list li {
+  margin-bottom: 0.4rem;
+}
+
+.arch-list strong {
+  color: var(--ink);
+}
+
+.note {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
+.section a {
+  color: var(--ink);
+  text-decoration-color: var(--ink-border);
+  text-underline-offset: 2px;
+}
+
+.section a:hover {
+  text-decoration-color: var(--ink);
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 500px;
+}
+
+#prompt-input {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.65rem 0.75rem;
+  background: #ffffff;
+  border: 1px solid var(--ink-border);
+  border-radius: 8px;
+  color: var(--ink);
+  resize: vertical;
+}
+
+#prompt-input:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+
+#generate-btn {
+  align-self: flex-start;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  background: var(--ink);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#generate-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.demo-status {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.demo-status.error {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.demo-output {
+  background: var(--ink-fill);
+  border: 1px solid var(--ink-border);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
