@@ -1,5 +1,4 @@
-// TODO: replace with actual Hugging Face Space API endpoint once deployed
-const HF_ENDPOINT = "TODO_REPLACE_WITH_HF_SPACE_URL";
+const HF_ENDPOINT = "https://sarge28-tiny-gpt-demo.hf.space/generate";
 
 async function generateText(prompt) {
   if (HF_ENDPOINT === "TODO_REPLACE_WITH_HF_SPACE_URL") {
