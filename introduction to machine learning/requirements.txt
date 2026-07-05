@@ -5,3 +5,5 @@ xgboost
 matplotlib
 scipy
 torch
+mlxtend
+umap-learn
