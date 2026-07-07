@@ -1,0 +1,11 @@
+{
+  "status": 200,
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "public, max-age=60, s-maxage=60",
+  "etag": "W/\"5c1b2951081af6ea947368290ca1040ad2bcb8de3dab00733cff85be25435589\"",
+  "x-ratelimit-limit": "60",
+  "x-ratelimit-remaining": "52",
+  "x-ratelimit-used": "8",
+  "x-ratelimit-resource": "core",
+  "x-ratelimit-reset": "1783443310"
+}

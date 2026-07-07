@@ -1,0 +1,5 @@
+[
+  {"id": 1215218226, "name": "academic-codebase", "full_name": "SARGE2899/academic-codebase", "description": "A version controlled record of everything college made me learn.", "language": "Java"},
+  {"id": 1214889980, "name": "ai-email-agent", "full_name": "SARGE2899/ai-email-agent", "description": "AI-powered email drafting tool built with FastAPI and Google Gemini", "language": "HTML"},
+  {"id": 1186432566, "name": "AI-powered-PRD-generator", "full_name": "SARGE2899/AI-powered-PRD-generator", "description": "A simple AI tool that turns a product idea into a full PRD in seconds. Built with Groq API and deployed on Vercel.", "language": "HTML"}
+]
